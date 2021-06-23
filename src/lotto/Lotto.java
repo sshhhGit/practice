@@ -30,9 +30,57 @@ public class Lotto {
                             ranArry[j] = temp;
                         }
                     }
-                }System.out.print(Arrays.toString(ranArry) +" "); //ranArry 배열 내용 출력
+                }
+//                int[] gameRanArry = new int[ranArry.length];
+//                for (int e = 0;e<n;e++) {
+//                    gameRanArry[e] = ranArry.length;
+//                }
+//            System.out.println(gameRanArry[5]);
+                System.out.print(Arrays.toString(ranArry)); //ranArry 배열 내용 출력
                 System.out.println();
         }
+        int[] ranArryResult = new int[6];
+        for (int a = 0; a < 6; a++) { //1~45 중 6개 출력
+            ranArryResult [a] = random.nextInt(45)+1; // 0~44이므로 +1
+            for (int b=0;b<a;b++){    //중복된 값이 나올경우 i값을 하나 줄이고 반복
+                if (ranArryResult [a] == ranArryResult [b]) {
+                    a--;
+                    break;
+                }
+                if(ranArryResult[a] < ranArryResult[b]) { //내림차순 정렬
+                    temp = ranArryResult[a];
+                    ranArryResult[a] = ranArryResult[b];
+                    ranArryResult[b] = temp;
+                }
+            }
+        }
+        int cont = 0;
+        System.out.println("\n당첨번호 : " + Arrays.toString(ranArryResult));
+        for (int q = 0;q<ranArry.length;q++){
+            for (int w = 0;w<ranArryResult.length;w++){
+                if(ranArry[q] == ranArryResult[w]) {
+                    cont++;
+                }
+            }
+        }
+        switch (cont){
+            case 6 :
+                System.out.print("\n"+Arrays.toString(ranArry) + "- 1등");
+                break;
+            case 5 :
+                System.out.print("\n"+Arrays.toString(ranArry) + "- 2등");
+                break;
+            case 4 :
+                System.out.print("\n"+Arrays.toString(ranArry) + "- 3등");
+                break;
+            case 3 :
+                System.out.print("\n"+Arrays.toString(ranArry) + "- 4등");
+                break;
+            default :
+                System.out.print("\n"+Arrays.toString(ranArry) + "- 꽝");
+                break;
+        }
+
     }
 }
 
