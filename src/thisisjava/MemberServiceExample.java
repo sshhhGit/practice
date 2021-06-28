@@ -1,5 +1,5 @@
 package thisisjava;
-
+//6-15
 public class MemberServiceExample {
     public static void main(String[] args) {
         MemberService memberService = new MemberService();

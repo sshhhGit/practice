@@ -1,6 +1,6 @@
 package thisisjava;
-
-public class AccountExample {
+//6-19
+public class Account2Example {
     public static void main(String[] args) {
         Account2 account2 = new Account2();
 

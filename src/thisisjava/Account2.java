@@ -1,5 +1,5 @@
 package thisisjava;
-
+//6-19
 public class Account2 {
     private int balance = 0;
     static final int MIN_BALANCE = 0;

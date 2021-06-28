@@ -1,5 +1,5 @@
 package thisisjava;
-
+//6-18
 public class ShopService {
     private static ShopService singleton = new ShopService();
 

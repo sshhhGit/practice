@@ -1,5 +1,5 @@
 package thisisjava;
-
+//6-16~17
 public class PrinterExample {
     public static void main(String[] args) {
 //      Printer printer = new Printer();

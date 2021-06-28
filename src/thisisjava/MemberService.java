@@ -1,5 +1,5 @@
 package thisisjava;
-
+//6-15
 public class MemberService {
     boolean login(String id, String password) {
         if ("hong".equals(id) && "12345".equals(password))

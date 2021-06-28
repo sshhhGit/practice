@@ -1,5 +1,5 @@
 package thisisjava;
-
+//6-20
 public class Account {
     private String ano;
     private String owner;

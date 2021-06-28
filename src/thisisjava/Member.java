@@ -1,5 +1,5 @@
 package thisisjava;
-
+//6-13~14
 public class Member {
     String name;
     String id;

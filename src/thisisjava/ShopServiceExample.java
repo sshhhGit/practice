@@ -1,5 +1,5 @@
 package thisisjava;
-
+//6-18
 public class ShopServiceExample {
     public static void main(String[] args) {
         ShopService obj1 = ShopService.getInstance();
